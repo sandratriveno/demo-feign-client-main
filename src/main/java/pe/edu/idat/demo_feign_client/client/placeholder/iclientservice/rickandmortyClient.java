@@ -13,12 +13,10 @@ import java.util.Map;
 public interface rickandmortyClient {
 
     @GetMapping("/character")
-    List<rickandmorty> obtenerLista();
+    Map<String, Object> obtenerLista();
 
     @GetMapping("/character/{id}")
     rickandmorty obtenerXid(@PathVariable("id") Long id);
 
-   @PostMapping("/character")
-    rickandmorty guardarUsuario(@RequestBody rickandmorty rickandmorty);
 
 }

@@ -1,5 +1,8 @@
 package pe.edu.idat.demo_feign_client.client.placeholder.iclientservice;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class rickandmorty {
     private int id;
     private String name;
